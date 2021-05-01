@@ -1,11 +1,13 @@
-song = "";
+song1 = "";
+song2 = "";
 leftWristX = 0;
 leftWristY = 0;
 rightWristX = 0;
 rightWristY = 0;
 
 function preload() {
-    song = loadSound("music.mp3");
+    song1 = loadSound("Lost Sky Fearless ptII feat Chris Linton NCS Release.mp3");
+    song2 = loadSound("Professional Griefers - deadmau5 ft Gerard Way【Asphalt 8 Airborne OST】.mp3");
 }
 
 function setup() {
@@ -40,7 +42,10 @@ function draw() {
 }
 
 function play() {
-    song.play();
+    song1.play();
+    song.setVolume(1);
+    song.rate(1);
+    song2.play();
     song.setVolume(1);
     song.rate(1);
 }
